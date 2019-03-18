@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ROC Curve</title>
+		<style>
+			html {
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+      }
+      body {
+        width: 1000px;
+        margin: 0 auto;
+        background-color: rgb(255, 255, 255);
+        padding: 0 20px 20px 20px;
+      }
+      h1 {
+        margin: 0;
+        padding: 20px 0;
+        color: rgb(0, 0, 0);
+      }
+		</style>
+	</head>
+	<body>
+		<h1>The ROC curve of logistic regression</h1>
+		<p>This is a ROC curve visualization tool for Logistic Regression model. Please specify parameters below to get your ROC curve visualization :)</p>
+		<br>
+		<p>In which way you want your data to be standardlized?</p>
+		<input type="radio" name="r1" value="stand"/>standardlization
+		<input type="radio" name="r1" value="minmax"/>min-max scaling
+		<br>
+		<br>
+		<p>Set your C value:</p>
+		<input type="text" id="c1"/>
+    <br>
+		<br>
+		<input type="button" value="Plot ROC" onclick="buttom_clicked()"/>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+		<br /><script src="scripts/main.js"></script>
+	</body>
+</html>
